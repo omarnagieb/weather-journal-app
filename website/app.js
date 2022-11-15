@@ -23,9 +23,9 @@ const userResponse = document.querySelector('.myInput').textContent;
 
 //event listener for the generation button.
 const generateButton = document.querySelector('#generate');
-generateButton.addEventListener('click', function (event) {
+generateButton.addEventListener('click', function (onClick) {
     //preventing Default.
-    event.preventDefault();
+    onClick.preventDefault();
 
     //grabbing the user's response.
     const zip = document.getElementById('zip').value;
